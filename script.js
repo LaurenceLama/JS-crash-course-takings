@@ -218,14 +218,86 @@ for (let t = 0; t < title.length; ++t) {
 // FUUUUUUUUUUUUUNCTIONS
 
 
+
 // function definition (syntax needed to 'memorized')
-function welcomePersonToFES (name) {
-  console.log(`Welcome to FES, ${name}!`);
+function welcomePersonToFES (firstName, lastName) {
+  console.log(`Welcome to FES, ${firstName} ${lastName}!`);
 }
 
 
 
 // function calling
-welcomePersonToFES('Laurence')
-welcomePersonToFES('Serge')
-welcomePersonToFES('Bro')
+welcomePersonToFES('Laurence', 'Lama')
+welcomePersonToFES('David', 'Doe')
+welcomePersonToFES('You are')
+
+
+// Return function, it is said to be very hard to understand. I will believe that, my brain cells can admit and will experience having a hard time with that. 
+
+function sumOfTwoNumbers(num1, num2) {
+  return num1 + num2
+} //parameters = parenthesis inside these multiple lines, it defines a something, ye basta it defines
+
+console.log(sumOfTwoNumbers(10,10)) // argument = the thing inside those parentheseses, this thing calls
+
+// function return exercise lezgoo
+/**convert celsius to fahrenheit
+ * F = C x 1.8 + 32
+ * 
+ * convertCelsiusToFahrenheit(0) -> 32
+ * convertCelsiusToFahrenheit(10) -> 50
+ * convertCelsiusToFahrenheit(30) -> 86
+*/
+
+/** My solution
+function convertCelsiusToFahrenheit(C, F) {
+  return F = C * 1.8 + 32
+}
+
+console.log(convertCelsiusToFahrenheit(0));
+console.log(convertCelsiusToFahrenheit(10));
+console.log(convertCelsiusToFahrenheit(30)); */
+
+// meh, I still did pretty decent this is the answer from the
+// function convertCelsiusToFahrenheit(celsius) {
+//   return celsius * 1.8 + 32;
+// }
+
+// console.log(convertCelsiusToFahrenheit(0));
+// console.log(convertCelsiusToFahrenheit(10));
+// console.log(convertCelsiusToFahrenheit(30));
+
+// this is another way by using arrows
+const convertCelsiusToFahrenheit = (celsius) => {
+  return celsius * 1.8 + 32 
+}
+
+console.log(convertCelsiusToFahrenheit(0));
+
+
+
+// ARRRRRRRAYS
+
+
+
+let arr = [20, 30, 40, 50, 100]
+
+// 1st element of array
+console.log(arr[0])
+
+// last element of array
+console.log(arr[arr.length - 1])
+
+// to add element onto end of an array
+arr.push(200)
+
+console.log(arr) //notice that the last element of array chosen is still 100 even tho there is a pushed 200, is because it is not included in the tray of bracket. Or that is how I understood it
+
+let newArr = arr.filter((element) => {
+  console.log(element)
+  if (element < 69) { //this thing is pretty self explanatory
+    return true //inserting this avoids the boxed bracket to be empty. From my understanding, it turns all values from the array to turn true, then the array filter loops from 20 to 200 until it encodes it all inside the boxed bracket 
+  }
+}) //need to rest early, I want a healthy body clock so, see this madness TOMOROWW, I mean the one liner for all these
+
+console.log(newArr) 
