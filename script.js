@@ -40,7 +40,7 @@ typeof anything;
  * const - cannot be reassigned, altho kinda same with let
  */
 
-const name = "Laurence";
+// const name = "Laurence"; I made this a comment cuzz imma use this const down this challenging exercise below,
 let temperature = 20;
 let isRaining = true;
 
@@ -80,12 +80,12 @@ console.log(baaala);
 // CONDITIONALSSSSSSS
 
 // Order is very important because it disregards everthing below to what will run. also 1 one of the if else elseif can run, no simultaneous
-let subscribed = true;
-let loggedIn = true;
+let subscribeed = true;
+let loggeedIn = true;
 
-if (subscribed === true) {
+if (subscribeed === true) {
   console.log('show the "video"');
-} else if (loggedIn === true) {
+} else if (loggeedIn === true) {
   console.log("upgrade to premium subscription");
 } else {
   console.log("log into account");
@@ -94,30 +94,30 @@ if (subscribed === true) {
 // condition sample
 
 let cash = 50
-let price = 400
-let difference = cash - price
+let prices = 400
+let difference = cash - prices
 
 // I used back tick btw (`left side of 1`) for ${math things}
-if (cash > price) {
+if (cash > prices) {
     console.log(`you paid extra, here\'s ${difference} dollars change`)
 }
-else if (cash === price)
+else if (cash === prices)
 console.log("I've received the exact amount, thanks")
 else {
-    console.log(`you are short on payment by ${cash - price * -1}`);
+    console.log(`you are short on payment by ${cash - prices * -1}`);
 }
 
 // Logic Operators
 
-let money = 60
-let prices = 40
-let isStoreOpen = false
+let money = 50
+let price = 40
+let isStoreOpen = true
 
-if (cash >= prices && isStoreOpen === true) {
+if (cash >= price && isStoreOpen === true) {
     console.log('cash is enough for buying')
 }
 
-else if (cash < prices || !isStoreOpen) {
+else if (cash < price || !isStoreOpen) {
 
     console.log('not enough gold')
 }
@@ -134,3 +134,98 @@ if (val) {
 else {
     console.log(/**"falsy value"*/ !!val)
 }
+
+// Ternary operators
+
+let hot = false
+
+hot ? console.log('weather hot') : console.log('weather is freeze')
+
+// another sample
+let subscribedd = true
+let loggedIn = true
+
+let stri = subscribedd && loggedIn ? 'show video' : 'hide video'
+console.log(stri)
+
+// Bazic example (the scripts are getting repetitive so just look above, especially lines 112-114)
+// goal is to print     'give receipt' : 'do not give receipt' at a "realistic" setting
+
+let receipt = money >= price && isStoreOpen ? 'give receipt' : 'do not give receipt'
+console.log(receipt) 
+
+
+
+// LOOOOOOOOOOOOOOOOPS
+// DRY = Don't Repeat Yourself
+
+let count = 1;
+
+
+// za 3 types
+
+// while loop, this is also the exercise
+// funny thing(not really), I spent I think 5mins finding a vibe song to go through this exercise, forgot I have the.. ehemm.. BIGGEST BRAIN. yeh took less than 20secs to finish. I am kinda,, kinda good hehe (this is for self boost motivation thingy not for boasting I swear, or mostly killing time to stop going through the video, Imma . get back now.)
+// while (count <= 100) {
+//   console.log(count)
+//   count = count + 1;
+// } IF YOU WANNA SEE THIS THING PRINT 1-100 JUST YK, DO
+
+// now, the goat, FOR LOOP
+// i made this print up to 10 so it does not take all the space, i still have more theories to learn
+for (let i = 0; i <= 10; i++) {
+  console.log(i);
+} 
+// it is said that on work, i++ is barely not seen on that for loop, according to sources
+// i = i + 1 is technically equivalent to i++ (or ++i), it basically ups the increment by 1, so --i should down the decrement by 1
+
+
+// Another exercise here we goooo
+// At first I did not get it, but after doing it the second time, of course with no kodigoes, tho my kodigoes came from my photographic memory, yehh once I see it imma know it ALWAYS the 2nd time, got lazy with solving it on my own. so ye i should solve these exercise the 1st to have pure learning yes
+for (let l = 1; l <= 20; ++l) {
+  if (l % 3 === 0 && l % 5 === 0) {
+    console.log (`${l} -> "Frontend Simplified"`)
+  }
+  else if (l % 3 === 0) {
+    console.log (`${l} -> "Frontend"`)
+  }
+  else if (l % 5 === 0) {
+    console.log (`${l} -> "Simplified"`)
+  }
+  else {
+    console.log (`${l} -> ${l}`)
+  }
+}
+
+// now the next exercise wants me to spell out Frontend Simplified, aww meeeen
+
+// const title = "Frontend Simplified"
+// for (let t = 1; t <= title.length; ++t) {
+// if (t) {
+//   console.log(title[t - 1])
+// }
+// } my solution
+
+// I meaaaan, the words spelt out. there are some excess codes like that if, should've realized sooner it works off by an if alone. So disregard if
+
+const title = "Frontend Simplified"
+for (let t = 0; t < title.length; ++t) {
+  console.log(title[t])
+}
+
+
+
+// FUUUUUUUUUUUUUNCTIONS
+
+
+// function definition (syntax needed to 'memorized')
+function welcomePersonToFES (name) {
+  console.log(`Welcome to FES, ${name}!`);
+}
+
+
+
+// function calling
+welcomePersonToFES('Laurence')
+welcomePersonToFES('Serge')
+welcomePersonToFES('Bro')
