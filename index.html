@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS crash course</title>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+    <!-- this defer thingy lets me print out the- my name on the DOM section, this is the 1st way, DOM is at the end so yeh, do not mind me now or smth -->
   </head>
   <body>
     <h1>Imma use these kindo' website for notes. again</h1>
@@ -144,13 +146,24 @@
       <li>
         Arrays
         <h3>
-          -Data structure that can <b>hold</b> multiple data values in one variable
+          -Data structure that can <b>hold</b> multiple data values in one
+          variable
         </h3>
       </li>
-      <li>Objects
+      <li>
+        Objects
         <h3>-used to <b>store</b> multiple properties in 1 variable</h3>
       </li>
-      <li>DOM</li>
+      <li>
+        DOM
+        <h3>
+          -the Document Object Model allows me not you, to access and change the
+          styling and content of elemtns on your- myy website
+        </h3>
+        <h1 class="title">Laurence za Enginyear</h1>
+        <button onclick="changeTitleToRed()">Click Me for xmas</button>
+        <button onclick="toggleDarkMode()">Click Me to go dark</button>
+      </li>
     </ul>
   </body>
 </html>

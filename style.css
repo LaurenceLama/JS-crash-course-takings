@@ -1,0 +1,19 @@
+* {
+    transition: all 500ms ease;
+}
+
+.normal {
+    background-color: white;
+}
+
+.dark-theme {
+    background-color: black;
+}
+
+.dark-theme * {
+    color: white;
+}
+
+.red {
+    color: red;
+}

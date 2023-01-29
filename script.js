@@ -454,3 +454,28 @@ console.log(users)
 // DOM
 
 
+// 1st way of accessing a element (can access classes)(MOST USED)
+console.log(document.querySelector('#title')) //for id's
+console.log(document.querySelector('.title')) //for classes
+
+// these ways are not working simply because the 'title' is set to a class and not an id so, yeh
+// 2nd way way of accessing a element (the element should have an id)
+console.log(document.getElementById('title'))
+
+// how to change the element of an HTML
+document.querySelector('.title').innerHTML += '. I am sort of the best-kinda'
+
+// change CSS
+document.querySelector('.title').style.backgroundColor = 'green'
+
+
+function changeTitleToRed() {
+  document.querySelector(".title").style.color = "red";
+}
+// function changeTitleToRed() { --just sayinnnn' better red changer
+//   document.querySelector(".title").classList.toggle("red");
+// }
+
+function toggleDarkMode() {
+    document.querySelector("body").classList.toggle("dark-theme");  
+}
