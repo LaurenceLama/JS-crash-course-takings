@@ -1,6 +1,11 @@
 //Data types and variables::::
 
+
+
 // STRINGSSS
+
+
+
 
 console.log("Hello world");
 
@@ -24,7 +29,12 @@ typeof anything;
 
 15 % 5; //input this on inspect element (or not i know yu no) -basically it says the divisibility of a number, if result is not 0, it is the remainder
 
+
+
+
 // BOOOOOLEAN
+
+
 
 1 > 2; //input on f12
 2 > 1; //also this,
@@ -77,7 +87,14 @@ let baaala = "1" !== 1;
 
 console.log(baaala);
 
+
+
+
 // CONDITIONALSSSSSSS
+
+
+
+
 
 // Order is very important because it disregards everthing below to what will run. also 1 one of the if else elseif can run, no simultaneous
 let subscribeed = true;
@@ -150,6 +167,10 @@ let receipt =
   money >= price && isStoreOpen ? "give receipt" : "do not give receipt";
 console.log(receipt);
 
+
+
+
+
 // LOOOOOOOOOOOOOOOOPS
 // DRY = Don't Repeat Yourself
 
@@ -202,7 +223,15 @@ for (let t = 0; t < title.length; ++t) {
   console.log(title[t]);
 }
 
+
+
+
+
 // FUUUUUUUUUUUUUNCTIONS
+
+
+
+
 
 // function definition (syntax needed to 'memorized')
 function welcomePersonToFES(firstName, lastName) {
@@ -256,7 +285,14 @@ const convertCelsiusToFahrenheit = (celsius) => {
 
 console.log(convertCelsiusToFahrenheit(0));
 
+
+
+
 // ARRRRRRRAYS
+
+
+
+
 
 let arr = [20, 30, 40, 50, 100];
 
@@ -377,7 +413,11 @@ console.log(cents);
 
 // FINALLY DONE WITH ARRAYS YEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEAAAAAAAAAAAAAAAA
 
-// next is OBJECTSSSSSSSSSSSSSSSSSSSS
+
+
+
+
+// next is OBJECTSSSSSSSSSSSSSSSSSSS
 
 let users = [
   {
@@ -448,6 +488,7 @@ console.log(users)
 
 
 // NOW FOR THE LAST ONEEEEEEE
+
 
 
 
